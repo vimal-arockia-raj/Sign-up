@@ -190,3 +190,172 @@ class PasswordManager extends Component {
 }
 
 export default PasswordManager
+
+
+//index.css//
+
+.password-manager {
+  font-family: Roboto, sans-serif;
+  background-color: #f8fafc;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 50px;
+}
+
+h1 {
+  color: #5763a5;
+}
+
+/* Form styling */
+form div {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+form input {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+button {
+  background-color: #0b69ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button img {
+  width: 20px;
+}
+
+/* Password list styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+li p {
+  margin: 0;
+}
+
+li img {
+  width: 20px;
+}
+
+/* No Passwords View */
+.no-passwords {
+  text-align: center;
+}
+
+.no-passwords img {
+  width: 100px;
+}
+
+/* Media queries */
+
+/* Extra Small (Size < 576px) */
+@media (max-width: 575.98px) {
+  /* No Passwords View */
+  .no-passwords {
+    font-size: 14px; /* Adjust font size for small screens */
+  }
+
+  .no-passwords img {
+    width: 80px; /* Adjust image size for small screens */
+  }
+
+  /* Masked Passwords View */
+  .password-manager ul li p {
+    font-size: 12px; /* Adjust font size for small screens */
+  }
+}
+
+/* Small (Size >= 576px) */
+@media (min-width: 576px) {
+  /* No Passwords View */
+  .no-passwords {
+    font-size: 16px; /* Adjust font size for larger screens */
+  }
+
+  .no-passwords img {
+    width: 100px; /* Adjust image size for larger screens */
+  }
+
+  /* Masked Passwords View */
+  .password-manager ul li p {
+    font-size: 14px; /* Adjust font size for larger screens */
+  }
+}
+
+/* Medium (Size >= 768px) */
+@media (min-width: 768px) {
+  /* No Passwords View */
+  .no-passwords {
+    font-size: 18px; /* Adjust font size for medium screens */
+  }
+
+  .no-passwords img {
+    width: 120px; /* Adjust image size for medium screens */
+  }
+
+  /* Masked Passwords View */
+  .password-manager ul li p {
+    font-size: 16px; /* Adjust font size for medium screens */
+  }
+}
+
+/* Large (Size >= 992px) */
+@media (min-width: 992px) {
+  /* No Passwords View */
+  .no-passwords {
+    font-size: 20px; /* Adjust font size for large screens */
+  }
+
+  .no-passwords img {
+    width: 140px; /* Adjust image size for large screens */
+  }
+
+  /* Masked Passwords View */
+  .password-manager ul li p {
+    font-size: 18px; /* Adjust font size for large screens */
+  }
+}
+
+/* Extra Large (Size >= 1200px) */
+@media (min-width: 1200px) {
+  /* No Passwords View */
+  .no-passwords {
+    font-size: 22px; /* Adjust font size for extra-large screens */
+  }
+
+  .no-passwords img {
+    width: 160px; /* Adjust image size for extra-large screens */
+  }
+
+  /* Masked Passwords View */
+  .password-manager ul li p {
+    font-size: 20px; /* Adjust font size for extra-large screens */
+  }
+}
+
